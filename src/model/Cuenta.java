@@ -5,6 +5,12 @@ public class Cuenta {
     private String user;
     private String password;
 
+    public Cuenta(String platform, String user, String password) {
+        this.platform = platform;
+        this.user = user;
+        this.password = password;
+    }
+
     public String getplatform() {
         return platform;
     }
