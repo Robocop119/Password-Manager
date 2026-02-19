@@ -9,4 +9,13 @@ public class GestorClaves {
     public GestorClaves() {
         this.listaCuentas = new ArrayList<>();
     }
+
+
+    public void agregarCuenta(Cuenta cuenta){
+        this.listaCuentas.add(cuenta);
+    }
+
+    public ArrayList<Cuenta> getListaCuentas(){
+        return this.listaCuentas;
+    }
 }
