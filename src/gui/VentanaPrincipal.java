@@ -1,6 +1,7 @@
 package gui;
 
 import javax.swing.JFrame;
+import javax.swing.JButton;
 
 public class VentanaPrincipal extends JFrame{
     public VentanaPrincipal(){
@@ -15,5 +16,15 @@ public class VentanaPrincipal extends JFrame{
 
         // Centrar la ventana en la pantalla
         this.setLocationRelativeTo(null);
+
+
+        // Crear el botón
+        JButton botonGuardar = new JButton("Guardar Cuenta");
+
+        // Añadirlo a la ventana
+        this.add(botonGuardar);
+
+        // Forzar que se vea
+        this.setVisible(true);
     }
 }
